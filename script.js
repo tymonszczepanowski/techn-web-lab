@@ -1,9 +1,9 @@
-$("#button-author").click(function(){
+$("#buttonAuthor").click(function(){
     $.ajax({
-        url: "/api/data",
+        url: "/api/author",
         type: "GET",
         dataType: "json",
         success: function(data) {
-            $("#data").text(data.name + ", " + data.indeks);
+            $("#pAuthor").text(data.name + ", " + data.indeks);
     }});
 });
